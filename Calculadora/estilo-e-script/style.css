@@ -59,11 +59,15 @@ body {
 .operadores {
     background-color: #9ea3cf;
     border: none;
+    cursor: pointer;
 }
 
 .igual {
     background-color: #868aad;
     border: none;
+    width: 279px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 input {
