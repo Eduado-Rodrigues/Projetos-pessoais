@@ -49,3 +49,13 @@ section#imc > div#caixas {
     display: block;
     padding: 10px;
 }
+
+div#caixas > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#caixas > p {
+    font-size: 0.8em;
+    text-align: justify;
+}
