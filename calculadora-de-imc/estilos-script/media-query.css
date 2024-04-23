@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* CONFIGURAÃO PARA TABLET */
+    body {
+        background-image: linear-gradient(to top, #9acef8, #142157);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* CONFIGURAÃO PARA DESKTOP */
+    body {
+        background-image: linear-gradient(to top, #9acef8, #142157);
+    }
+}
