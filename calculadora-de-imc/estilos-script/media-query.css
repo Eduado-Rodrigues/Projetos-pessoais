@@ -1,15 +1,34 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    /* CONFIGURAÃO PARA TABLET */
+    /* CONFIGURAÇÃO PARA TABLET */
     body {
         background-image: linear-gradient(to top, #9acef8, #142157);
+    }
+
+    section#imc {
+        width: 90vw;
+        height: 350px;
+    }
+
+    section#imc > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    section#imc > div#caixas {
+        float: right;
+        width: 70%;
     }
 }
 
 @media screen and (min-width: 992px) {
-    /* CONFIGURAÃO PARA DESKTOP */
+    /* CONFIGURAÇÃO PARA DESKTOP */
     body {
         background-image: linear-gradient(to top, #9acef8, #142157);
     }
+
 }
