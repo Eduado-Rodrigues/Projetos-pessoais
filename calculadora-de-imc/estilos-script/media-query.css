@@ -46,4 +46,13 @@
         float: left;
         width: 50%;
     }
+
+    div#caixas > h1 {
+        font-size: 2em;
+    }
+    
+    div#caixas > p {
+        font-size: 1em;
+        margin: 20px 0px;
+    }
 }
