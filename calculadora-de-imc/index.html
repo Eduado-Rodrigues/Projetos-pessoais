@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <main>
+        <section id="imc">
+            <div id="imagem">
+            </div>
+            <div id="caixas">
+                <h1>
+                    Calculadora de IMC
+                </h1>
+                <p>
+                    O IMC é um parâmetro utilizado para avaliarse o peso está dentro 
+                    do valor ideal para a altura. Isso significa que, a partir do resultado 
+                    do IMC é possível saber se a pessoa está acima ou abaixo do peso recomendado 
+                    e também diagnosticar problemas de saúde como obesidade ou desnutrição. 
+                </p>
+                <div class="campo">
+                    <input type="number" name="altura" id="ialtura" placeholder="Metros (ex.: 1.70)" step="0.01" required>
+                    <label for="ialtura">Altura (m)</label>
+                </div>
+                <div class="campo">
+                    <input type="number" name="peso" id="ipeso" placeholder="Quilos (ex.: 70.2)" required>
+                    <label for="ipeso">Peso (kg)</label>
+                </div>
+                <button onclick="calcularIMC()">Calcular IMC</button>
+                    <div id="resultado"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
