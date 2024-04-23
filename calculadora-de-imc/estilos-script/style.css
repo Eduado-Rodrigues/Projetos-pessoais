@@ -73,3 +73,25 @@ div.campo {
 div.campo > label {
     display: none;
 }
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #9acef8;
+    font-size: 1em;
+    width: calc(100% - 20%);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
