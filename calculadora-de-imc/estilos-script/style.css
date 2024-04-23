@@ -111,3 +111,10 @@ button {
 button:hover {
     background-color: #15297c;
 }
+
+#resultado {
+    margin-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
