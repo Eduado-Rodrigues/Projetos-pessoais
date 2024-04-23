@@ -31,4 +31,19 @@
         background-image: linear-gradient(to top, #9acef8, #142157);
     }
 
+    section#imc {
+        width: 950px;
+        height: 415px;
+    }
+
+    section#imc > div#imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#imc > div#caixas {
+        float: left;
+        width: 50%;
+    }
 }
