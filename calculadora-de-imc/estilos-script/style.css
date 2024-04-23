@@ -44,3 +44,8 @@ section#imc > div#imagem {
     background-position: center;
     height: 150px;
 }
+
+section#imc > div#caixas {
+    display: block;
+    padding: 10px;
+}
