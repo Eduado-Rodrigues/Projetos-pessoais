@@ -38,4 +38,5 @@ function calcularIMC() {
     }
 
     document.getElementById("resultado").innerHTML = resultado;
+    return false;
 }
