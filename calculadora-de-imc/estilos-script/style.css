@@ -36,3 +36,11 @@ section#imc {
     transition: width .3s, hetght .3s;
     transition-timing-function: ease;
 }
+
+section#imc > div#imagem {
+    display: block;
+    background: #063161 url('../imagens/imc.png');
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
