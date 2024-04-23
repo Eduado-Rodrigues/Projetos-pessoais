@@ -118,3 +118,23 @@ button:hover {
     font-weight: bold;
     font-size: 18px;
 }
+
+.abaixo-peso {
+    color: #00ff00;
+}
+
+.normal {
+    color: #0000ff; 
+}
+
+.acima-peso {
+    color: #ff9900; 
+}
+
+.obeso {
+    color: #ff0000;
+}
+
+.obesidade-grave {
+    color: #550b86; 
+}
