@@ -1,0 +1,120 @@
+ var compra = [];
+        var numeroNota = 0;
+
+        function adicionarProduto(nome, preco) {
+            compra.push({ nome: nome, preco: preco });
+            atualizarCompra();
+        }
+
+        function adicionarProdutoManual() {
+            var nome = document.getElementById('nomeNovoProduto').value;
+            var preco = parseFloat(document.getElementById('precoNovoProduto').value);
+            if (nome && preco) {
+                compra.push({ nome: nome, preco: preco });
+                atualizarCompra();
+                document.getElementById('nomeNovoProduto').value = '';
+                document.getElementById('precoNovoProduto').value = '';
+            } else {
+                alert("Por favor, insira o nome e o preço do produto.");
+            }
+        }
+
+        function atualizarCompra() {
+            var listaCompra = document.getElementById('lista-compra');
+            listaCompra.innerHTML = '';
+
+            for (var i = 0; i < compra.length; i++) {
+                var produtoItem = document.createElement('li');
+                produtoItem.textContent = compra[i].nome + ': R$ ' + compra[i].preco.toFixed(2);
+                listaCompra.appendChild(produtoItem);
+            }
+        }
+
+        function limparCompra() {
+            compra = [];
+            atualizarCompra();
+        }
+
+        function finalizarCompra() {
+            numeroNota++;
+            var extrato = document.getElementById('extrato');
+            extrato.style.display = 'block';
+
+            var total = 0;
+            for (var i = 0; i < compra.length; i++) {
+                total += compra[i].preco;
+            }
+
+            var listaExtrato = document.getElementById('lista-extrato');
+            var extratoItem = document.createElement('li');
+            extratoItem.innerHTML = `Nota Fiscal - Papelaria Trindade
+Rua Daniela Perez, 129 - Bairro Nova Vida
+Parauapebas-PA - CEP: 68515-000
+Telefone: (94) 98176-0681
+Data: ${getData()}                       Nº: ${numeroNota}
+Vendedor: Eduardo Rodrigues
+-----------------------------------------------------------------------
+Produtos:
+${listarProdutos(compra, numeroNota)}
+-----------------------------------------------------------------------
+Total da Compra: R$ ${total.toFixed(2)}
+-----------------------------------------------------------------------
+Obrigado por sua compra!
+<button id="nota" class="imprimir-button" onclick="imprimirNota(${numeroNota})">Imprimir Nota</button>`;
+            listaExtrato.appendChild(extratoItem);
+        }
+
+        function imprimirExtrato() {
+            var extrato = document.getElementById('extrato').innerHTML;
+            var printWindow = window.open('', '', 'height=400,width=600');
+            printWindow.document.write('<html><head><title>Extrato de Compra</title></head><body>');
+            printWindow.document.write('<pre>' + extrato + '</pre>');
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        }
+
+        function imprimirNota(numero) {
+            var total = 0;
+            var notaFiscal = `Nota Fiscal - Papelaria Trindade
+Rua Daniela Perez, 129 - Bairro Nova Vida
+Parauapebas-PA - CEP: 68515-000
+Telefone: (94) 98176-0681
+Data: ${getData()}                       Nº: ${numero}
+Vendedor: Eduardo Rodrigues
+-----------------------------------------------------------------------
+Produtos:
+`;
+            for (var i = 0; i < compra.length; i++) {
+                total += compra[i].preco;
+                notaFiscal += `${compra[i].nome}: R$ ${compra[i].preco.toFixed(2)}\n`;
+            }
+            notaFiscal += `-----------------------------------------------------------------------
+Total da Compra: R$ ${total.toFixed(2)}
+-----------------------------------------------------------------------
+Obrigado por sua compra!`;
+
+            var printWindow = window.open('', '', 'height=400,width=600');
+            printWindow.document.write('<html><head><title>Nota Fiscal</title></head><body>');
+            printWindow.document.write('<pre>' + notaFiscal + '</pre>');
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        }
+
+        function listarProdutos(produtos, numero) {
+            var listaProdutos = '';
+            for (var i = 0; i < produtos.length; i++) {
+                listaProdutos += `${produtos[i].nome}: R$ ${produtos[i].preco.toFixed(2)}\n`;
+            }
+            return `<div id="nota-${numero}">${listaProdutos}</div>`;
+        }
+
+
+        function getData() {
+            var data = new Date();
+            var dia = String(data.getDate()).padStart(2, '0');
+            var mes = String(data.getMonth() + 1).padStart(2, '0');
+            var ano = data.getFullYear();
+            return dia + '/' + mes + '/' + ano;
+        }
