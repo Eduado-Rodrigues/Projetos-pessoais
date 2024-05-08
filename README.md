@@ -26,7 +26,4 @@ Um relógio simples que exibe as horas, minutos e segundos utilizando ponteiros.
 
 ![Relógio Analógico](insira_aqui_o_link_para_a_imagem_da_calculadora_simples)
 
-Sinta-se à vontade para explorar o projeto e contribuir com novas ideias ou melhorias!
-
-
 Sinta-se à vontade para explorar os projetos e contribuir com novas ideias ou melhorias!
