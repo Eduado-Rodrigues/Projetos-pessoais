@@ -22,8 +22,8 @@ Uma calculadora básica que realiza operações de adição, subtração, multip
 
 Um relógio simples que exibe as horas, minutos e segundos utilizando ponteiros. É uma implementação visualmente agradável e funcional de um relógio analógico.
 
-![Relógio Analógico](insira_aqui_o_link_para_a_imagem_do_relogio_analogico)
+![Relógio Analógico](relogio/imagens/relogio.jpg)
 
-![Relógio Analógico](insira_aqui_o_link_para_a_imagem_da_calculadora_simples)
+![Relógio Analógico](https://eduado-rodrigues.github.io/projetos-pessoais/relogio/)
 
 Sinta-se à vontade para explorar os projetos e contribuir com novas ideias ou melhorias!
