@@ -14,7 +14,7 @@ Uma calculadora simples que permite ao usuário calcular seu Índice de Massa Co
 
 Uma calculadora básica que realiza operações de adição, subtração, multiplicação e divisão. É uma ótima ferramenta para cálculos rápidos do dia a dia.
 
-![Calculadora Simples](calculadora/imagem/calculadora.jpg)
+![Calculadora Simples](calculadora/imagens/calculadora.jpg)
 
 ![Calculadora Simples](https://eduado-rodrigues.github.io/projetos-pessoais/Calculadora/)
 
