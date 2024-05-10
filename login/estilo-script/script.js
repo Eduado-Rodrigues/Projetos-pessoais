@@ -3,6 +3,13 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
     console.log('Username: ' + username + ', Password: ' + password);
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Login realizado com sucesso!",
+        showConfirmButton: false,
+        timer: 1500
+    });
 });
 
 document.getElementById('signupForm').addEventListener('submit', function(event) {
@@ -10,6 +17,13 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     var newUsername = document.getElementById('newUsername').value;
     var newPassword = document.getElementById('newPassword').value;
     console.log('New Username: ' + newUsername + ', New Password: ' + newPassword);
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Registrado com sucesso!",
+        showConfirmButton: false,
+        timer: 1500
+    });
 });
 
 document.getElementById('signupLink').addEventListener('click', function(event) {
