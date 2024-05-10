@@ -58,3 +58,9 @@ document.getElementById('newPassword').addEventListener('input', function() {
         document.getElementById('strength').style.color = 'gray';
     }
 });
+
+document.getElementById('signupLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('loginContainer').style.display = 'none';
+    document.getElementById('signupContainer').style.display = 'block';
+});
