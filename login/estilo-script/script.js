@@ -34,15 +34,46 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
 
 document.getElementById('signupLink').addEventListener('click', function(event) {
     event.preventDefault();
-    document.getElementById('signupContainer').style.display = 'block';
-    document.getElementById('loginContainer').style.display = 'none';
+    document.getElementById('loginContainer').classList.add('fade-out');
+    document.getElementById('signupContainer').classList.add('fade-in');
+    setTimeout(function() {
+        document.getElementById('loginContainer').style.display = 'none';
+        document.getElementById('signupContainer').style.display = 'block';
+        document.getElementById('loginContainer').classList.remove('fade-out');
+        document.getElementById('signupContainer').classList.remove('fade-in');
+    }, 500); // Tempo da animação em milissegundos
 });
 
 document.getElementById('loginLink').addEventListener('click', function(event) {
     event.preventDefault();
-    document.getElementById('signupContainer').style.display = 'none';
-    document.getElementById('loginContainer').style.display = 'block';
+    document.getElementById('signupContainer').classList.add('fade-out');
+    document.getElementById('loginContainer').classList.add('fade-in');
+    setTimeout(function() {
+        document.getElementById('signupContainer').style.display = 'none';
+        document.getElementById('loginContainer').style.display = 'block';
+        document.getElementById('signupContainer').classList.remove('fade-out');
+        document.getElementById('loginContainer').classList.remove('fade-in');
+    }, 500); // Tempo da animação em milissegundos
 });
+
+
+// document.getElementById('signupLink').addEventListener('click', function(event) {
+//     event.preventDefault();
+//     document.getElementById('signupContainer').style.display = 'block';
+//     document.getElementById('loginContainer').style.display = 'none';
+// });
+
+// document.getElementById('signupLink').addEventListener('click', function(event) {
+//     event.preventDefault();
+//     document.getElementById('loginContainer').style.display = 'none';
+//     document.getElementById('signupContainer').style.display = 'block';
+// });
+
+// document.getElementById('loginLink').addEventListener('click', function(event) {
+//     event.preventDefault();
+//     document.getElementById('signupContainer').style.display = 'none';
+//     document.getElementById('loginContainer').style.display = 'block';
+// });
 
 let regExpWeak = /[a-z]/;
 let regExpMedium = /\d+/;
@@ -79,8 +110,3 @@ document.getElementById('newPassword').addEventListener('input', function() {
     }
 });
 
-document.getElementById('signupLink').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.getElementById('loginContainer').style.display = 'none';
-    document.getElementById('signupContainer').style.display = 'block';
-});
