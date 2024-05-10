@@ -8,7 +8,7 @@ Uma calculadora simples que permite ao usuário calcular seu Índice de Massa Co
 
 ![Calculadora de IMC](calculadora-de-imc/imagens/imc-1.jpg)
 
-![Calculadora de IMC](https://eduado-rodrigues.github.io/projetos-pessoais/calculadora-de-imc/)
+![Calculadora de IMC](https://eduardohro.github.io/projetos-pessoais/calculadora-de-imc/)
 
 ## Calculadora Simples
 
@@ -16,7 +16,7 @@ Uma calculadora básica que realiza operações de adição, subtração, multip
 
 ![Calculadora Simples](calculadora/imagens/calculadora.jpg)
 
-![Calculadora Simples](https://eduado-rodrigues.github.io/projetos-pessoais/Calculadora/)
+![Calculadora Simples](https://eduardohro.github.io/projetos-pessoais/Calculadora/)
 
 ## Relógio Analógico
 
@@ -24,6 +24,6 @@ Um relógio simples que exibe as horas, minutos e segundos utilizando ponteiros.
 
 ![Relógio Analógico](relogio/imagens/relogio.jpg)
 
-![Relógio Analógico](https://eduado-rodrigues.github.io/projetos-pessoais/relogio/)
+![Relógio Analógico](https://eduardohro.github.io/projetos-pessoais/relogio/)
 
 Sinta-se à vontade para explorar os projetos e contribuir com novas ideias ou melhorias!
