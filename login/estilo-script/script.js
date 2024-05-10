@@ -4,11 +4,14 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var password = document.getElementById('password').value;
     console.log('Username: ' + username + ', Password: ' + password);
     Swal.fire({
-        position: "top-end",
+        position: "center",
         icon: "success",
         title: "Login realizado com sucesso!",
         showConfirmButton: false,
-        timer: 1500
+        timer: 1500,
+        customClass: {
+            popup: 'swal2-center',
+        }
     });
 });
 
@@ -18,11 +21,14 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     var newPassword = document.getElementById('newPassword').value;
     console.log('New Username: ' + newUsername + ', New Password: ' + newPassword);
     Swal.fire({
-        position: "top-end",
+        position: "center",
         icon: "success",
         title: "Registrado com sucesso!",
         showConfirmButton: false,
-        timer: 1500
+        timer: 1500,
+        customClass: {
+            popup: 'swal2-center',
+        }
     });
 });
 
