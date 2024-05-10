@@ -2,7 +2,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     event.preventDefault();
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
-    // Aqui você pode adicionar sua lógica de validação do formulário de login
     console.log('Username: ' + username + ', Password: ' + password);
 });
 
