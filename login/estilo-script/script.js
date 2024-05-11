@@ -19,18 +19,59 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     event.preventDefault();
     var newUsername = document.getElementById('newUsername').value;
     var newPassword = document.getElementById('newPassword').value;
-    console.log('New Username: ' + newUsername + ', New Password: ' + newPassword);
-    Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Registrado com sucesso!",
-        showConfirmButton: false,
-        timer: 1500,
-        customClass: {
-            popup: 'swal2-center',
+    var strength = 0;
+
+    if (newPassword.length > 3) {
+        if (newPassword.match(regExpWeak)) {
+            strength += 1;
         }
-    });
+        if (newPassword.match(regExpMedium)) {
+            strength += 1;
+        }
+        if (newPassword.match(regExpStrong)) {
+            strength += 1;
+        }
+
+        if (strength >= 3) { 
+            console.log('New Username: ' + newUsername + ', New Password: ' + newPassword);
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Registrado com sucesso!",
+                showConfirmButton: false,
+                timer: 1500,
+                customClass: {
+                    popup: 'swal2-center',
+                }
+            });
+        } else {
+            Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Senha fraca",
+                text: "Por favor, escolha uma senha mais forte.",
+                showConfirmButton: false,
+                timer: 3000,
+                customClass: {
+                    popup: 'swal2-center',
+                }
+            });
+        }
+    } else {
+        Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Senha muito curta",
+            text: "A senha deve ter pelo menos 4 caracteres.",
+            showConfirmButton: false,
+            timer: 3000,
+            customClass: {
+                popup: 'swal2-center',
+            }
+        });
+    }
 });
+
 
 document.getElementById('signupLink').addEventListener('click', function(event) {
     event.preventDefault();
