@@ -3,8 +3,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
     console.log('Username: ' + username + ', Password: ' + password);
-    document.getElementById('username').value = ''; // Limpa o campo de usuário
-    document.getElementById('password').value = ''; // Limpa o campo de senha
+    document.getElementById('username').value = ''; 
+    document.getElementById('password').value = ''; 
     Swal.fire({
         position: "center",
         icon: "success",
@@ -46,8 +46,8 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
                     popup: 'swal2-center',
                 }
             });
-            document.getElementById('newUsername').value = ''; // Limpa o campo de novo usuário
-            document.getElementById('newPassword').value = ''; // Limpa o campo de nova senha
+            document.getElementById('newUsername').value = ''; 
+            document.getElementById('newPassword').value = ''; 
         } else {
             Swal.fire({
                 position: "center",
@@ -75,8 +75,6 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         });
     }
 });
-
-
 
 document.getElementById('signupLink').addEventListener('click', function(event) {
     event.preventDefault();
@@ -173,7 +171,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
     console.log('Username: ' + username + ', Password: ' + password);
-    simulateSuccessAnimation(); // Chama a função para simular a animação de sucesso
+    simulateSuccessAnimation();
 });
 
 document.getElementById('signupForm').addEventListener('submit', function(event) {
@@ -181,7 +179,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     var newUsername = document.getElementById('newUsername').value;
     var newPassword = document.getElementById('newPassword').value;
     console.log('New Username: ' + newUsername + ', New Password: ' + newPassword);
-    checkPasswordStrength(); // Chama a função para verificar a força da senha
+    checkPasswordStrength(); 
 });
 
 function simulateSuccessAnimation() {
@@ -229,4 +227,3 @@ function checkPasswordStrength() {
         }
     }
 }
-
