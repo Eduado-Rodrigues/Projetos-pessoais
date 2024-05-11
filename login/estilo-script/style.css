@@ -61,7 +61,8 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-#togglePassword {
+#togglePassword,
+#toggleNewPassword {
     position: absolute;
     right: 20px;
     top: 49%;

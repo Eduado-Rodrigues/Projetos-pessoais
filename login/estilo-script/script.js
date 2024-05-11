@@ -41,7 +41,7 @@ document.getElementById('signupLink').addEventListener('click', function(event) 
         document.getElementById('signupContainer').style.display = 'block';
         document.getElementById('loginContainer').classList.remove('fade-out');
         document.getElementById('signupContainer').classList.remove('fade-in');
-    }, 500); // Tempo da animação em milissegundos
+    }, 500);
 });
 
 document.getElementById('loginLink').addEventListener('click', function(event) {
@@ -108,6 +108,16 @@ const password = document.getElementById('password');
 togglePassword.addEventListener('click', function() {
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
     password.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+    this.classList.toggle('fa-eye');
+});
+
+const toggleNewPassword = document.getElementById('toggleNewPassword');
+const newPassword = document.getElementById('newPassword');
+
+toggleNewPassword.addEventListener('click', function() {
+    const type = newPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    newPassword.setAttribute('type', type);
     this.classList.toggle('fa-eye-slash');
     this.classList.toggle('fa-eye');
 });
