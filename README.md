@@ -1,6 +1,6 @@
 # Projetos Pessoais
 
-Este repositório terá alguns os projetos pessoais desenvolvidos com HTML5, CSS3 e JavaScript. Abaixo estão alguns dos projetos disponíveis:
+Este repositório terá alguns dos mini-projetos pessoais desenvolvidos com HTML5, CSS3 e JavaScript. Abaixo estão alguns deles disponíveis:
 
 ## Calculadora de IMC (Índice de Massa Corporal)
 
