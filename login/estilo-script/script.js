@@ -53,27 +53,8 @@ document.getElementById('loginLink').addEventListener('click', function(event) {
         document.getElementById('loginContainer').style.display = 'block';
         document.getElementById('signupContainer').classList.remove('fade-out');
         document.getElementById('loginContainer').classList.remove('fade-in');
-    }, 500); // Tempo da animação em milissegundos
+    }, 500); 
 });
-
-
-// document.getElementById('signupLink').addEventListener('click', function(event) {
-//     event.preventDefault();
-//     document.getElementById('signupContainer').style.display = 'block';
-//     document.getElementById('loginContainer').style.display = 'none';
-// });
-
-// document.getElementById('signupLink').addEventListener('click', function(event) {
-//     event.preventDefault();
-//     document.getElementById('loginContainer').style.display = 'none';
-//     document.getElementById('signupContainer').style.display = 'block';
-// });
-
-// document.getElementById('loginLink').addEventListener('click', function(event) {
-//     event.preventDefault();
-//     document.getElementById('signupContainer').style.display = 'none';
-//     document.getElementById('loginContainer').style.display = 'block';
-// });
 
 let regExpWeak = /[a-z]/;
 let regExpMedium = /\d+/;
@@ -108,5 +89,18 @@ document.getElementById('newPassword').addEventListener('input', function() {
         document.getElementById('strength').innerText = 'Senha Muito Curta';
         document.getElementById('strength').style.color = 'gray';
     }
+});
+
+document.getElementById('forgotPasswordButton').addEventListener('click', function() {
+    // Adicione aqui a lógica para lidar com o clique no botão "Esqueci a senha"
+    // Por exemplo, você pode exibir um alerta ou redirecionar o usuário para outra página
+    Swal.fire({
+        position: "center",
+        icon: "info",
+        title: "Recuperação de senha",
+        text: "Em breve você receberá um e-mail com instruções para redefinir sua senha.",
+        showConfirmButton: false,
+        timer: 3000
+    });
 });
 
