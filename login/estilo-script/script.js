@@ -92,8 +92,6 @@ document.getElementById('newPassword').addEventListener('input', function() {
 });
 
 document.getElementById('forgotPasswordButton').addEventListener('click', function() {
-    // Adicione aqui a lógica para lidar com o clique no botão "Esqueci a senha"
-    // Por exemplo, você pode exibir um alerta ou redirecionar o usuário para outra página
     Swal.fire({
         position: "center",
         icon: "info",
@@ -104,3 +102,12 @@ document.getElementById('forgotPasswordButton').addEventListener('click', functi
     });
 });
 
+const togglePassword = document.getElementById('togglePassword');
+const password = document.getElementById('password');
+
+togglePassword.addEventListener('click', function() {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+    this.classList.toggle('fa-eye');
+});
