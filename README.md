@@ -1,6 +1,6 @@
 # Projetos Pessoais
 
-Este repositório terá alguns os projetos pessoais desenvolvidos com HTML5, CSS3 e JavaScript. Abaixo estão alguns dos projetos disponíveis:
+Este repositório terá alguns dos mini-projetos pessoais desenvolvidos com HTML5, CSS3 e JavaScript. Abaixo estão alguns deles disponíveis:
 
 ## Calculadora de IMC (Índice de Massa Corporal)
 
@@ -8,7 +8,7 @@ Uma calculadora simples que permite ao usuário calcular seu Índice de Massa Co
 
 ![Calculadora de IMC](calculadora-de-imc/imagens/imc-1.jpg)
 
-![Calculadora de IMC](https://eduardohro.github.io/projetos-pessoais/calculadora-de-imc/)
+- **Link:** [Calculadora de IMC](https://eduardohro.github.io/projetos-pessoais/calculadora-de-imc/)
 
 ## Calculadora Simples
 
@@ -16,7 +16,7 @@ Uma calculadora básica que realiza operações de adição, subtração, multip
 
 ![Calculadora Simples](calculadora/imagens/calculadora.jpg)
 
-![Calculadora Simples](https://eduardohro.github.io/projetos-pessoais/Calculadora/)
+- **Link:** [Calculadora Simples](https://eduardohro.github.io/projetos-pessoais/Calculadora/)
 
 ## Relógio Analógico
 
@@ -24,6 +24,6 @@ Um relógio simples que exibe as horas, minutos e segundos utilizando ponteiros.
 
 ![Relógio Analógico](relogio/imagens/relogio-1.jpg)
 
-![Relógio Analógico](https://eduardohro.github.io/projetos-pessoais/relogio/)
+- **Link:** [Relógio Analógico](https://eduardohro.github.io/projetos-pessoais/relogio/)
 
 Sinta-se à vontade para explorar os projetos e contribuir com novas ideias ou melhorias!
