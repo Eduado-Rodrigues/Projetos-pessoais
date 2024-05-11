@@ -3,6 +3,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
     console.log('Username: ' + username + ', Password: ' + password);
+    document.getElementById('username').value = ''; // Limpa o campo de usuário
+    document.getElementById('password').value = ''; // Limpa o campo de senha
     Swal.fire({
         position: "center",
         icon: "success",
@@ -44,6 +46,8 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
                     popup: 'swal2-center',
                 }
             });
+            document.getElementById('newUsername').value = ''; // Limpa o campo de novo usuário
+            document.getElementById('newPassword').value = ''; // Limpa o campo de nova senha
         } else {
             Swal.fire({
                 position: "center",
@@ -71,6 +75,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         });
     }
 });
+
 
 
 document.getElementById('signupLink').addEventListener('click', function(event) {
@@ -162,3 +167,66 @@ toggleNewPassword.addEventListener('click', function() {
     this.classList.toggle('fa-eye-slash');
     this.classList.toggle('fa-eye');
 });
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    console.log('Username: ' + username + ', Password: ' + password);
+    simulateSuccessAnimation(); // Chama a função para simular a animação de sucesso
+});
+
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var newUsername = document.getElementById('newUsername').value;
+    var newPassword = document.getElementById('newPassword').value;
+    console.log('New Username: ' + newUsername + ', New Password: ' + newPassword);
+    checkPasswordStrength(); // Chama a função para verificar a força da senha
+});
+
+function simulateSuccessAnimation() {
+    console.log('Simulating success animation...');
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Login realizado com sucesso!",
+        showConfirmButton: false,
+        timer: 1500,
+        customClass: {
+            popup: 'swal2-center',
+        }
+    });
+}
+
+function checkPasswordStrength() {
+    let password = document.getElementById('newPassword').value;
+    let strength = 0;
+
+    if (password.length > 3) {
+        if (password.match(/[a-z]/)) {
+            strength += 1;
+        }
+        if (password.match(/\d+/)) {
+            strength += 1;
+        }
+        if (password.match(/[!@#$%^&*?_~\-()]/)) {
+            strength += 1;
+        }
+
+        if (strength == 1) {
+            console.log('Password is weak.');
+            Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Senha fraca",
+                text: "Por favor, escolha uma senha mais forte.",
+                showConfirmButton: false,
+                timer: 3000,
+                customClass: {
+                    popup: 'swal2-center',
+                }
+            });
+        }
+    }
+}
+
