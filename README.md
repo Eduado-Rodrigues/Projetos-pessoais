@@ -24,6 +24,6 @@ Um relógio simples que exibe as horas, minutos e segundos utilizando ponteiros.
 
 ![Relógio Analógico](relogio/imagens/relogio.jpg)
 
-![Relógio Analógico](https://eduardohro.github.io/projetos-pessoais/relogio/)
+![Relógio Analógico](https://eduardohro.github.io/projetos-pessoais/relogio-1/)
 
 Sinta-se à vontade para explorar os projetos e contribuir com novas ideias ou melhorias!
