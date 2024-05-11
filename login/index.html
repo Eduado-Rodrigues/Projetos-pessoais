@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"                               />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="estilo-script/style.css">
     <link rel="stylesheet" href="estilo-script/media-query.css">
 </head>
@@ -20,10 +21,10 @@
                 <span class="material-symbols-outlined">
                     vpn_key
                     </span>
-                <input type="password" id="password" name="password" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="20"><br>
+                <input type="password" id="password" name="password" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                <i class="fas fa-eye-slash" id="togglePassword"></i><br>
                 <input type="submit" value="Entrar">
                 <input type="button" value="Esqueci a senha" id="forgotPasswordButton">
-
             </form>
             <div class="signup">
                 <p>Não tem uma conta? <a href="#" id="signupLink">Registrar-se</a></p>

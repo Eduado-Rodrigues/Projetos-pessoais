@@ -47,6 +47,7 @@ input[type="submit"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    position: relative;
 }
 
 input[type="submit"] {
@@ -58,6 +59,14 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 20px;
+    top: 49%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 #forgotPasswordButton {
