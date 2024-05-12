@@ -2,14 +2,44 @@
 
 @media (min-width: 768px) {
     .container {
-        width: 50vw;
-        height: 390px;
+        width: 40vw;
+        height: 400px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        left: 2%;
+        transform: translateY(-12px);
+    }
+
+    #togglePassword,
+    #toggleNewPassword {
+        right: 30px;
+        top: 54%;
+        transform: translateY(-50%);
+    }
+
+    div#forgotPasswordContainer > span {
+        right: 68px;
+        top: 80%;
+        transform: translateY(-50%);
     }
 }
 
 @media (min-width: 992px) {
     .container {
-        width: 600px;
-        height: 390px;
+        width: 450px;
+        height: 400px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        left: 5%;
+    }
+
+    div#forgotPasswordContainer > span {
+        right: 135px;
+        top: 80%;
+        transform: translateY(-50%);
     }
 }
