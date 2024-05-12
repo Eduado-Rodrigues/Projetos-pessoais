@@ -147,7 +147,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #000cb3;
 }
 
 #togglePassword,
@@ -186,7 +186,7 @@ div#forgotPasswordContainer > span {
 }
 
 #forgotPasswordButton:hover {
-    background-color: #0056b3;
+    background-color: #000cb3;
 }
 
 .signup {
@@ -195,7 +195,7 @@ div#forgotPasswordContainer > span {
 }
 
 .signup a {
-    color: #007bff;
+    color: #000cb3;
     text-decoration: none;
 }
 
