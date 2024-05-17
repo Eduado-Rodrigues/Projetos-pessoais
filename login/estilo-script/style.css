@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+:root {
+    --color-1: #fff;
+    --color-2: #2d2c82;
+    --color-3: #2c2d82;
+    --color-4: #94cfcd;
+    --color-5: #000cb3;
+    --color-6: #007bff;
+}
+
 body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -85,7 +94,7 @@ main {
     padding: 10px;
     width: 260px;
     height: 410px;
-    background-color: #fff;
+    background-color: var(--color-1);
     border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
@@ -100,8 +109,8 @@ h2 {
 }
 
 form > div.campo {
-    background-color: #2d2c82;
-    border: 2px solid #2c2d82;
+    background-color: var(--color-2);
+    border: 2px solid var(--color-3);
     display: block;
     width: 100%;
     height: 40px;
@@ -121,8 +130,8 @@ input[type="password"] {
     width: 80%;
     padding: 10px;
     left: 20%;
-    background-color: #94cfcd;
-    border: 1px solid #050e8b;
+    background-color: var(--color-4);
+    border: 1px solid var(--color-2);
     border-radius: 5px;
     box-sizing: border-box;
     position: relative;
@@ -136,7 +145,7 @@ div.campo > input:focus-within {
 input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: var(--color-6);
     border: 1px solid #ffffff;
     border-radius: 5px;
     box-sizing: border-box;
@@ -147,7 +156,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #000cb3;
+    background-color: var(--color-5);
 }
 
 #togglePassword,
@@ -165,7 +174,7 @@ input[type="submit"]:hover {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    background-color: #007bff;
+    background-color: var(--color-6);
     color: white;
     border: none;
     border-radius: 5px;
@@ -186,7 +195,7 @@ div#forgotPasswordContainer > span {
 }
 
 #forgotPasswordButton:hover {
-    background-color: #000cb3;
+    background-color: var(--color-5);
 }
 
 .signup {
@@ -195,7 +204,7 @@ div#forgotPasswordContainer > span {
 }
 
 .signup a {
-    color: #000cb3;
+    color: var(--color-5);
     text-decoration: none;
 }
 
