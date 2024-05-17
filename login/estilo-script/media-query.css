@@ -6,7 +6,7 @@
         height: 400px;
     }
 
-    input[type="text"],
+    input[type="email"],
     input[type="password"] {
         left: 2%;
         transform: translateY(-12px);
@@ -32,7 +32,7 @@
         height: 400px;
     }
 
-    input[type="text"],
+    input[type="email"],
     input[type="password"] {
         left: 5%;
     }
