@@ -20,7 +20,7 @@
     }
 
     div#forgotPasswordContainer > span {
-        right: 68px;
+        right: 51px;
         top: 80%;
         transform: translateY(-50%);
     }
@@ -38,7 +38,7 @@
     }
 
     div#forgotPasswordContainer > span {
-        right: 135px;
+        right: 115px;
         top: 80%;
         transform: translateY(-50%);
     }
