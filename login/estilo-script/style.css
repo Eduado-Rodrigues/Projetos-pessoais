@@ -200,6 +200,20 @@ div#forgotPasswordContainer > span {
     background-color: var(--color-5);
 }
 
+#strengthIndicator {
+    width: 150px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    background-color: var(--color-1); 
+    text-align: center;
+}
+
+#strength {
+    color: #ff0000; 
+    font-weight: bold; 
+}
+
 .signup {
     text-align: center;
     margin-top: 20px;
