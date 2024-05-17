@@ -1,9 +1,9 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
-    console.log('Username: ' + username + ', Password: ' + password);
-    document.getElementById('username').value = ''; 
+    console.log('Email: ' + email + ', Password: ' + password);
+    document.getElementById('email').value = ''; 
     document.getElementById('password').value = ''; 
     Swal.fire({
         position: "center",
@@ -19,7 +19,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
 document.getElementById('signupForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    var newUsername = document.getElementById('newUsername').value;
+    var newEmail = document.getElementById('newEmail').value;
     var newPassword = document.getElementById('newPassword').value;
     var strength = 0;
 
@@ -35,7 +35,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         }
 
         if (strength >= 3) { 
-            console.log('New Username: ' + newUsername + ', New Password: ' + newPassword);
+            console.log('New Email: ' + newEmail + ', New Password: ' + newPassword);
             Swal.fire({
                 position: "center",
                 icon: "success",
@@ -46,7 +46,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
                     popup: 'swal2-center',
                 }
             });
-            document.getElementById('newUsername').value = ''; 
+            document.getElementById('newEmail').value = ''; 
             document.getElementById('newPassword').value = ''; 
         } else {
             Swal.fire({
@@ -168,17 +168,17 @@ toggleNewPassword.addEventListener('click', function() {
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
-    console.log('Username: ' + username + ', Password: ' + password);
+    console.log('Email: ' + email + ', Password: ' + password);
     simulateSuccessAnimation();
 });
 
 document.getElementById('signupForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    var newUsername = document.getElementById('newUsername').value;
+    var newEmail = document.getElementById('newEmail').value;
     var newPassword = document.getElementById('newPassword').value;
-    console.log('New Username: ' + newUsername + ', New Password: ' + newPassword);
+    console.log('New Email: ' + newEmail + ', New Password: ' + newPassword);
     checkPasswordStrength(); 
 });
 
