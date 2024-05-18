@@ -150,17 +150,18 @@ const togglePassword = document.getElementById('togglePassword');
 const password = document.getElementById('password');
 
 togglePassword.addEventListener('click', function() {
-    const type = password.getAttribute('type') === 'password' ? 'password' : 'password';
+    const type = password.getAttribute('type') === 'password' ? 'email' : 'password';
     password.setAttribute('type', type);
     this.classList.toggle('fa-eye-slash');
     this.classList.toggle('fa-eye');
 });
 
+
 const toggleNewPassword = document.getElementById('toggleNewPassword');
 const newPassword = document.getElementById('newPassword');
 
 toggleNewPassword.addEventListener('click', function() {
-    const type = newPassword.getAttribute('type') === 'password' ? 'password' : 'password';
+    const type = newPassword.getAttribute('type') === 'password' ? 'email' : 'password';
     newPassword.setAttribute('type', type);
     this.classList.toggle('fa-eye-slash');
     this.classList.toggle('fa-eye');

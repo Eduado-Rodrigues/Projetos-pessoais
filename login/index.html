@@ -17,23 +17,20 @@
             <div class="wave"></div>
             <div class="wave"></div>
           </div>
-        <div class="container" id="loginContainer">
+          <div class="container" id="loginContainer">
             <h2>Login</h2>
             <form id="loginForm" method="post" autocomplete="on">
                 <div class="campo">
-                    <span class="material-symbols-outlined">
-                        mail
-                    </span>
+                    <span class="material-symbols-outlined">mail</span>
                     <input type="email" id="email" name="email" placeholder="Email" required maxlength="30">
                 </div>
                 <br>
                 <div class="campo">
-                    <span class="material-symbols-outlined">
-                        lock
-                        </span>
+                    <span class="material-symbols-outlined">lock</span>
                     <input type="password" id="password" name="password" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    <i class="fas fa-eye-slash" id="togglePassword"></i>
                 </div>
-                <i class="fas fa-eye-slash" id="togglePassword"></i><br>
+                <br>
                 <input type="submit" value="Entrar">
                 <div id="forgotPasswordContainer">
                     <input type="button" value="Esqueci a senha" id="forgotPasswordButton">
@@ -44,6 +41,7 @@
                 <p>Não tem uma conta? <a href="#" id="signupLink">Registrar-se</a></p>
             </div>
         </div>
+        
         <div class="container" id="signupContainer" style="display: none;">
             <h2>Registrar-se</h2>
             <form id="signupForm" method="post" autocomplete="on">
