@@ -128,7 +128,8 @@ div.campo > span {
 }
 
 input[type="email"],
-input[type="password"] { 
+input[type="password"],
+input[type="text"] { 
     width: 80%;
     padding: 10px;
     left: 20%;
